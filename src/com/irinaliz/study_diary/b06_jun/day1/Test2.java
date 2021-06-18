@@ -1,4 +1,4 @@
-package com.irinaliz.study_diary.b06_jun;
+package com.irinaliz.study_diary.b06_jun.day1;
 
 public class Test2 {
 
