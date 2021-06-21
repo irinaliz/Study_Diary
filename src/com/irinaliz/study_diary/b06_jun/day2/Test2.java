@@ -23,5 +23,19 @@ public class Test2 {
 		int num = -1;
 		System.out.println( ((num > 0) ? "양수" :(num < 0) ? "음수" : "0") + " 입니다" );
 		
+		
+		
+		int math = 77;
+		if(math < 60) {
+			
+		} else if (math >= 60 && math < 70) {
+			
+		} else if(math >= 70 && math<80) {
+			
+		} else if (math >=  80 && math <90) {
+			
+		} else {
+			
+		}
 	}
 }
