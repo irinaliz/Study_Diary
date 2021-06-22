@@ -8,9 +8,9 @@ public class Quiz1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-//		q1();
+		q1();
 //		q2();
-		q3();
+//		q3();
 //		q4();
 //		q5();
 
@@ -38,8 +38,7 @@ public class Quiz1 {
 	}
 	
 	public static void q3() {
-		/*
-		System.out.println("3번 문제");
+		
 		for (int i= 101; i <= 109; i++) {
 			if(i == 104 || i == 107) {
 				System.out.println();
@@ -47,9 +46,9 @@ public class Quiz1 {
 			System.out.print(i + " ");
 			
 		}
-		*/
 		
-		/*
+		
+		
 		System.out.println();
 		
 		int a= 1;
@@ -60,10 +59,10 @@ public class Quiz1 {
 			}
 			System.out.print((i+100) + " ");
 		}
-		*/
+		
 		
 
-		/*
+		
 		System.out.println();
 		
 		for (int i= 1; i <= 30; i++) {
@@ -74,7 +73,7 @@ public class Quiz1 {
 				System.out.print((i+100) + " ");
 			}
 		}
-		*/
+		
 		
 	}
 

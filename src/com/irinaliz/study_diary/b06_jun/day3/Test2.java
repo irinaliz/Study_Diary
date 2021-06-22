@@ -28,9 +28,9 @@ public class Test2 {
 		//예제 2번
 		int in = 7;
 		switch (in % 2 ) {
-		case 0: System.out.println(" 짝수 입니다.");
+		case 0: System.out.println("짝수 입니다.");
 			break;
-		case 1:	System.out.println(" 홀수 입니다.");
+		case 1:	System.out.println("홀수 입니다.");
 			break;
 			default:
 				System.out.println("이상한 번호입니다");
