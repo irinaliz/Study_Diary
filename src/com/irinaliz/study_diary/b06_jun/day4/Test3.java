@@ -5,10 +5,12 @@ public class Test3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		q1();
+//		q1();
 //		q2();
 //		q3();
-//		q4();
+//		q3_1();
+//		q3_2();
+		q4();
 	}
 
 	
@@ -49,12 +51,35 @@ public class Test3 {
 	}
 	
 	public static void q3() {
+		//for
 		int school_year = 1;
 		System.out.println("나이 : 학년");
 		for (int i = 8; i <= 13 ; i++) {
 			System.out.println(i +"세 : " + "초" + school_year );
 			school_year++;
 		}
+	}
+	
+	public static void q3_1() {
+		// while 작성문
+		int i = 8;
+		while( i <= 13 ) {
+			System.out.println(i +"세 : " + "초" + (i-7) );
+			i++;
+		}
+	}
+	public static void q3_2() {
+		//do 작성문
+		int i = 8;
+		int school_year = 1;
+		
+		do {
+		
+			System.out.println(i +"세 : " + "초" + school_year );
+			i++;
+			school_year++;
+			
+		} while( i <= 13);
 	}
 	
 	public static void q4() {
