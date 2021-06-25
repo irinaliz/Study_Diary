@@ -131,10 +131,9 @@ public class Test {
 		Scanner scn = new Scanner (System.in);
 		boolean scanboolean = true ; 
 		String[] birth = null;
-		System.out.print( "주민번호를 입력해주세요 : ");
 		
 		do {
-
+			System.out.print( "주민번호를 입력해주세요 : ");
 			String str= scn.nextLine();
 			if(str.length() == 14) {
 				if(str.contains("-")) {
@@ -148,19 +147,34 @@ public class Test {
 						
 						
 						int age = Integer.parseInt(birth[0]);
-						System.out.println("나이 : 만 " + (year - (age+1900))+"세");
-						System.out.println("성별 : " + (str.split("-")[1].charAt(0) == '1' ? "남성" : "여성"));
+						String gender = String.valueOf(str.split("-")[1].charAt(0));
+						int year_change = 0;
+						switch (gender) {
+						case "1" : 
+							gender = "남성";
+							year_change = 1;
+							break;
+						case "2" : 
+							gender = "여성";
+							year_change = 1;
+							break;
+						case "3":
+							gender = "남성";
+							break;
+						case "4" :
+							gender = "여성";
+							break;
+						}
+						System.out.println("나이 : 만 " + (year - (age + (year_change == 0 ? 2000 : 1900 ) )+"세"));
+						System.out.println("성별 : " + gender);
 						System.out.println("생일 : " + birth[1] +"월 " + birth[2] +"일" );
-						break;
-					 
-					 
+						scanboolean = false;
+
 				} else {
 					System.out.println("올바른 형식이 아닙니다.");
-				System.out.println("다시 입력 부탁드리겠습니다.");
 				}
 			} else {
 				System.out.println("(오류) 잘못된 입력값입니다.");
-				System.out.println("다시 입력 부탁드리겠습니다.");
 			};
 		} while (scanboolean);
 		
