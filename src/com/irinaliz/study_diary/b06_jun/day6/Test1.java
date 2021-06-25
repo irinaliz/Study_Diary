@@ -84,4 +84,5 @@ public class Test1 {
 		System.out.println((int) Math.ceil(abg));
 		System.out.println((int) Math.floor(abg));
 	}
+	
 }
