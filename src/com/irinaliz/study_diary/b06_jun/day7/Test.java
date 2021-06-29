@@ -149,6 +149,7 @@ public class Test {
 						int age = Integer.parseInt(birth[0]);
 						String gender = String.valueOf(str.split("-")[1].charAt(0));
 						int year_change = 0;
+						
 						switch (gender) {
 						case "1" : 
 							gender = "남성";

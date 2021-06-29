@@ -6,39 +6,62 @@ public class Test2 {
 		// TODO Auto-generated method stub
 
 		int h_and_z = 4;
-		if(h_and_z %  2 == 1) {
-			System.out.println("홀수");
-		} else if ( h_and_z % 2 == 0) {
-			System.out.println("짝수");
+//		if(h_and_z %  2 == 1) {
+//			System.out.println("홀수");
+//		} else if ( h_and_z % 2 == 0) {
+//			System.out.println("짝수");
+//		}
+//		
+//		//속도를 고려하였을땐 IF문보다 Switch 더 빠르다.
+//		//예제 1번
+//		int gender = 1;
+//		switch ( gender) {
+//		case 1: System.out.println("남성입니다");
+//			break;
+//		case 2:System.out.println("여성입니다");
+//			break;
+//		default :
+//			System.out.println( "잘못된 값입니다");
+//			break;
+//		}
+//		
+//		//예제 2번
+//		int in = 7;
+//		switch (in % 2 ) {
+//		case 0: System.out.println("짝수 입니다.");
+//			break;
+//		case 1:	System.out.println("홀수 입니다.");
+//			break;
+//			default:
+//				System.out.println("이상한 번호입니다");
+//		}
+		
+		String[][] str = {{"a","b","c","d","e"} , {"f","g","t","z","q"} };
+		
+		for(int i = 0; i< str.length; i++) {
+			
+			for(int a = 0;  a<str[i].length ; a++) {
+			switch(str[i][a]) {
+			case "a" :
+				System.out.println("a");
+				
+			case "b" :
+				System.out.println("b");
+				
+			case "c" :
+				System.out.println("c");
+				
+			case "d" :
+				System.out.println("d");
+				
+			case "e" :
+				System.out.println("e");
+				
+			case "z":
+				System.out.println("z");
+				}
+			}
 		}
-		
-		//속도를 고려하였을땐 IF문보다 Switch 더 빠르다.
-		//예제 1번
-		int gender = 1;
-		switch ( gender) {
-		case 1: System.out.println("남성입니다");
-			break;
-		case 2:System.out.println("여성입니다");
-			break;
-		default :
-			System.out.println( "잘못된 값입니다");
-			break;
-		}
-		
-		//예제 2번
-		int in = 7;
-		switch (in % 2 ) {
-		case 0: System.out.println("짝수 입니다.");
-			break;
-		case 1:	System.out.println("홀수 입니다.");
-			break;
-			default:
-				System.out.println("이상한 번호입니다");
-		}
-		
-		
-		
-		
 	}
 
 }
