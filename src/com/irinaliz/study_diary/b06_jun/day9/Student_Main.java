@@ -18,6 +18,7 @@ public class Student_Main extends Person2{
 		leebomin.setWeight(85);
 		
 		System.out.println(leebomin.getAge());
+		System.out.println("test1");
 		
 		
 	}
