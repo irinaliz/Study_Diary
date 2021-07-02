@@ -100,7 +100,10 @@ public class Q5_BankServicelmpl implements BankService {
             while (!re_pawd){
                 if(str.equals("Exit")) return;
                 System.out.println(" 비밀번호 재확인을 위해 다시 입력해주세요 >>");
-                str = scn.next();
+
+                if(scn.next().equals(str)) re_pawd = false;
+                else re_pawd = true;
+
             }
             this.passwd = pawd;
             System.out.println("패스워드 설정이 정상적으로 완료 되었습니다.");

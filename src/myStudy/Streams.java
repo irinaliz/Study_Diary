@@ -12,13 +12,6 @@ public class Streams {
         abc.add("c");
         abc.add(" ");
         abc.add("b");
-        abc.add(" ");
-        abc.add("e");
-        abc.add(" ");
-        abc.add(" ");
-        abc.add("d");
-        abc.add("f");
-        abc.add("g");
 
         abc.sort(null); // abc , 1,2,3 순으로 정렬
 //        abc.sort(Comparator.reverseOrder()); // 리버스 정렬

@@ -2,7 +2,7 @@ package com.irinaliz.study_diary.b06_jun.day12.test.Quiz;
 
 import java.util.Calendar;
 
-public class Q4_Student {
+public class Q4_Student1 {
     String name;
     String birth;
     String School;
@@ -10,7 +10,7 @@ public class Q4_Student {
     int month;
     int date;
 
-    public Q4_Student(String name, String birth, String School) {
+    public Q4_Student1(String name, String birth, String School) {
         this.name = name;
         this.birth = birth;
         this.School = School;
@@ -23,6 +23,7 @@ public class Q4_Student {
         System.out.print("이름 :" + this.name +" , ");
         System.out.print("나이 :" +  this.age +" , ");
         System.out.print(this.School);
+        System.out.println();
     }
 
 }
