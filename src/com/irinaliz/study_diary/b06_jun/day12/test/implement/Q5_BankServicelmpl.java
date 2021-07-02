@@ -51,13 +51,13 @@ public class Q5_BankServicelmpl implements BankService {
         while(booleans){
             System.out.print(" 출금액 >> ");
             money_clone = scn.nextInt();
-            if(money_clone > this.money){
-                System.out.println("# 소유하신 금액보다 많은 출금액을 입력하셨습니다.");
-                continue;
-            }
             while(money_clone <= 0){
                 System.out.println("# 0원 이상 입력해주십시오.");
                 money_clone = scn.nextInt();
+            }
+            if(money_clone > this.money){
+                System.out.println("# 소유하신 금액보다 많은 출금액을 입력하셨습니다.");
+                continue;
             }
             while (true){
                 booleans = !passwd_confirm();
