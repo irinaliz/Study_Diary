@@ -11,7 +11,6 @@ public class deleteLine {
             if(files.getName().contains(".java") && files.canWrite()){ //해당 파일 이름의 .java가 있으면 && 작성이 가능한 파일 인 경우.
                 String check_String = ""; // 일단 여기에 1줄씩 담아놓고, 체크를 함
                 String data = ""; //만약 내가 찾는게 데이터가 아니라면? data에 넣어버림.
-
                 FileReader fr = new FileReader(files.getPath()); //파일을 읽음 , char ,byte식으로 읽은상태
                 BufferedReader br = new BufferedReader(fr); // char또는 byte식으로 읽은 객체를 Buffer에 넣어서 개행이 들어올 때 또는 꽉찼을때 출력
                 while(true){
@@ -22,7 +21,6 @@ public class deleteLine {
                         }
                     } else break; //만약 null이라면 While 탈출
                 }
-
                 FileWriter fw = new FileWriter(files.getPath(), false); //해당 java파일의 경로에다가.
                 fw.write(data); //작성해놓은 문구를 기입
                 fw.close(); //그리곤 해당 파일작성 종료
